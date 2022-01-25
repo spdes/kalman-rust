@@ -46,4 +46,4 @@ GPL v3 or later.
 
 Zheng Zhao, zz@zabemon.com
 
-[^1]: Python: ["the only good snake is a dead snake"](https://youtu.be/tDJu2aShw0M?t=61).
+[^1]: Python: ["the only good snake is a dead snake"](https://youtu.be/tDJu2aShw0M?t=62).
