@@ -6,7 +6,7 @@
 
 This repository features a **simple** Kalman filter and RTS smoother (KFS) implementation in Rust by using the [ndarray](https://github.com/rust-ndarray/ndarray) library.
 
-By **simple**, I mean that the implementation is *not* at its most efficient form not to mention production-ready. It is almost a direct translation of my past Python implementations of KFS, and I tried to keep the syntax here readable for Python/Matlab/Julia users. This means that if you are familar with Python/Matlab/Julia and is interesting to learn Rust, then this implementation would be a good starting example for you.
+By **simple**, I mean that this implementation is almost a direct translation of my past Python implementations of KFS, and I tried to keep the syntax here readable for Python/Matlab/Julia users. It on ther other hand means that this implementation would be a good starting example for you, if you are familar with Python/Matlab/Julia and is interesting to learn Rust.
 
 # Installation and run
 
@@ -36,7 +36,7 @@ As a disclaimer, in case that you want to sue me for luring you to learn Rust, p
 
 In folder `./benchmarks` you may find a few benchmark files written in Rust, Numpy, Jax, Matlab, and Julia to compare their performance on running Kalman filtering and smoothing.
 
-In short, the most important result is that the Rust implementation is evidently better than others when the state dimension is large, and there is still a room to optimise it further!
+In short, the most important result is that the Rust implementation is evidently faster than others when the state dimension is large (on my working computer), and there is still a room to optimise it further!
 
 You could find detailed results and explanations in [**this article**](https://not.finished.yet).  
 
