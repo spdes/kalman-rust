@@ -1,0 +1,25 @@
+[package]
+name = "kalman-rust"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+
+[profile.bench]
+opt-level = 3
+
+[dependencies]
+ndarray = { version = "0.15.4", features = ["matrixmultiply-threading"]}
+ndarray-rand = "0.14.0"
+rand_chacha = "0.3.1"
+ndarray-linalg = { version = "0.14.1", features = ["openblas-system"] }
+plotly = { version = "0.7.0", features = ["plotly_ndarray"] }
+
+[dev-dependencies]
+criterion = { version = "0.3.5", features = ["html_reports"] }
+
+[[bench]]
+name = "bench_rust"
+harness = false
+path = "benchmarks/bench_rust/run.rs"
