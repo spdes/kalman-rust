@@ -1,5 +1,7 @@
 # Kalman filter and RTS smoother in Rust (ndarray)
 
+[![run](https://github.com/spdes/kalman-rust/actions/workflows/test_run.yml/badge.svg)](https://github.com/spdes/kalman-rust/actions/workflows/test_run.yml)
+
 ![A Kalman filtering and RTS smoothing plot](figs/results.png)
 
 This repository features a **simple** Kalman filter and RTS smoother (KFS) implementation in Rust by using the [ndarray](https://github.com/rust-ndarray/ndarray) library.
