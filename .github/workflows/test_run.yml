@@ -1,0 +1,22 @@
+name: run
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    container:
+      image: rust
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install openblas
+        run: |
+          apt update
+          apt install -y libopenblas-dev
+      - uses: actions-rs/cargo@v1
+        with:
+          command: build
