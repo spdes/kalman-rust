@@ -188,7 +188,7 @@ pub fn kf(
         mfs.slice_mut(s![k, ..]).assign(&m);
         pfs.slice_mut(s![k, .., ..]).assign(&p);
 
-        // In princple you could also do the assignment in parallel as in the below.
+        // In principle you could also do the assignment in parallel as in the below.
         // But it becomes even slower, I don't know why. 
         // Also recall to enable "rayon" feature of you want to try this.
         // Zip::from(&mut mfs.slice_mut(s![k, ..])).and(&m).par_for_each(|a, &b| *a = b);
